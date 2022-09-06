@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D9E0697-4E68-47FF-8192-1C2D3E36D479}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Sistema de Inventario\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\..\Sistema de Inventario\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmPrincipales\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipales\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipales\FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipales\FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecundarios\AddAhorros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecundarios\AddAhorros.Designer.cs">
+      <DependentUpon>AddAhorros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecundarios\AddPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecundarios\AddPrestamos.Designer.cs">
+      <DependentUpon>AddPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecundarios\AddSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecundarios\AddSocios.Designer.cs">
+      <DependentUpon>AddSocios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmAbonarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmAbonarPago.Designer.cs">
+      <DependentUpon>FrmAbonarPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmAhorros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmAhorros.Designer.cs">
+      <DependentUpon>FrmAhorros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmBueno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmBueno.Designer.cs">
+      <DependentUpon>FrmBueno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmDetalleAhorro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmDetalleAhorro.Designer.cs">
+      <DependentUpon>FrmDetalleAhorro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmDetallePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmDetallePago.Designer.cs">
+      <DependentUpon>FrmDetallePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmFiltro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmFiltro.Designer.cs">
+      <DependentUpon>FrmFiltro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmMalo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmMalo.Designer.cs">
+      <DependentUpon>FrmMalo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmPagos.Designer.cs">
+      <DependentUpon>FrmPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmPrestamos.Designer.cs">
+      <DependentUpon>FrmPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecundarios\FrmSocios.Designer.cs">
+      <DependentUpon>FrmSocios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validaciones\Validaciones.cs" />
+    <EmbeddedResource Include="FrmPrincipales\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipales\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecundarios\AddAhorros.resx">
+      <DependentUpon>AddAhorros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecundarios\AddPrestamos.resx">
+      <DependentUpon>AddPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecundarios\AddSocios.resx">
+      <DependentUpon>AddSocios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecundarios\FrmAbonarPago.resx">
+      <DependentUpon>FrmAbonarPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecundarios\FrmAhorros.resx">
+      <DependentUpon>FrmAhorros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecundarios\FrmBueno.resx">
+      <DependentUpon>FrmBueno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecundarios\FrmDetalleAhorro.resx">
+      <DependentUpon>FrmDetalleAhorro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecundarios\FrmDetallePago.resx">
+      <DependentUpon>FrmDetallePago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecundarios\FrmFiltro.resx">
+      <DependentUpon>FrmFiltro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecundarios\FrmMalo.resx">
+      <DependentUpon>FrmMalo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecundarios\FrmPagos.resx">
+      <DependentUpon>FrmPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecundarios\FrmPrestamos.resx">
+      <DependentUpon>FrmPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecundarios\FrmSocios.resx">
+      <DependentUpon>FrmSocios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CapaComun\CapaComun.csproj">
+      <Project>{7801bed9-5137-4ae7-a914-62ca9321d1af}</Project>
+      <Name>CapaComun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocios\CapaNegocios.csproj">
+      <Project>{ff24078d-3423-4a4b-9ab6-a76e88619ee2}</Project>
+      <Name>CapaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
