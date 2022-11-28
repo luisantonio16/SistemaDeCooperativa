@@ -29,12 +29,11 @@ namespace CapaPresentacion.FrmSecundarios
         private void BtnNewAhorro_Click(object sender, EventArgs e)
         {
             string id = tipo.correlativo(4);
-            FrmFiltro filtro = new FrmFiltro();
-            filtro.Show();
+           
             AddAhorros ahorros = new AddAhorros();
             ahorros.TxtIdAhorro.Text = id;
             ahorros.ShowDialog();
-            filtro.Close();
+          
         }
 
         private void FrmAhorros_Load(object sender, EventArgs e)
@@ -85,11 +84,11 @@ namespace CapaPresentacion.FrmSecundarios
 
         private void detalleDePagosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmFiltro filtro = new FrmFiltro();
+           
 
             if (DataListadoAhorros.SelectedRows.Count > 0)
             {
-                filtro.Show();
+              
                 AddAhorros frmDetalle = new AddAhorros();
                 frmDetalle.update = true;
                 frmDetalle.LblIdSocio.Text = DataListadoAhorros.CurrentRow.Cells["idSocio"].Value.ToString();
@@ -100,7 +99,7 @@ namespace CapaPresentacion.FrmSecundarios
 
 
                 frmDetalle.ShowDialog();
-                filtro.Hide();
+                
                 ListarPagos();
             }
 
@@ -113,11 +112,11 @@ namespace CapaPresentacion.FrmSecundarios
 
         private void realizarPagoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmFiltro filtro = new FrmFiltro();
+           
 
             if (DataListadoAhorros.SelectedRows.Count > 0)
             {
-                filtro.Show();
+               
                 FrmDetalleAhorro frmDetalle = new FrmDetalleAhorro();
                
                 
@@ -127,7 +126,7 @@ namespace CapaPresentacion.FrmSecundarios
 
 
                 frmDetalle.ShowDialog();
-                filtro.Hide();
+                
                 ListarPagos();
             }
 

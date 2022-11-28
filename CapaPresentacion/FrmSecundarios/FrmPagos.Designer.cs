@@ -43,6 +43,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.SubMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.detalleDePagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realizarPagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataListadoPagos)).BeginInit();
             this.SubMenu.SuspendLayout();
@@ -165,7 +166,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.detalleDePagosToolStripMenuItem,
             this.realizarPagoToolStripMenuItem});
             this.SubMenu.Name = "SubMenu";
-            this.SubMenu.Size = new System.Drawing.Size(209, 74);
+            this.SubMenu.Size = new System.Drawing.Size(209, 52);
             // 
             // detalleDePagosToolStripMenuItem
             // 
@@ -183,6 +184,17 @@ namespace CapaPresentacion.FrmSecundarios
             this.realizarPagoToolStripMenuItem.Text = "Realizar Pago";
             this.realizarPagoToolStripMenuItem.Click += new System.EventHandler(this.realizarPagoToolStripMenuItem_Click);
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2CustomGradientPanel1.BorderThickness = 3;
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1270, 660);
+            this.guna2CustomGradientPanel1.TabIndex = 90;
+            // 
             // FrmPagos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,6 +205,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.Controls.Add(this.DataListadoPagos);
             this.Controls.Add(this.TxtBuscarDocumento);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPagos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -218,5 +231,6 @@ namespace CapaPresentacion.FrmSecundarios
         private System.Windows.Forms.ContextMenuStrip SubMenu;
         private System.Windows.Forms.ToolStripMenuItem detalleDePagosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem realizarPagoToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
     }
 }

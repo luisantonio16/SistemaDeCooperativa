@@ -56,6 +56,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LblCodPagos = new System.Windows.Forms.Label();
             this.LblIdPres = new System.Windows.Forms.Label();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.Btncerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -429,6 +430,17 @@ namespace CapaPresentacion.FrmSecundarios
             this.LblIdPres.Text = "Socios";
             this.LblIdPres.Visible = false;
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2CustomGradientPanel1.BorderThickness = 3;
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(598, 733);
+            this.guna2CustomGradientPanel1.TabIndex = 97;
+            // 
             // AddPrestamos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -458,6 +470,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.Controls.Add(this.CmbSocios);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddPrestamos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -497,5 +510,6 @@ namespace CapaPresentacion.FrmSecundarios
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label LblCodPagos;
         private System.Windows.Forms.Label LblIdPres;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
     }
 }

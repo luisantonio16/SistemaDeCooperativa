@@ -44,6 +44,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataListadoPrestamos)).BeginInit();
             this.SuspendLayout();
@@ -223,6 +224,17 @@ namespace CapaPresentacion.FrmSecundarios
             this.label7.TabIndex = 93;
             this.label7.Text = "Fecha";
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2CustomGradientPanel1.BorderThickness = 3;
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1257, 625);
+            this.guna2CustomGradientPanel1.TabIndex = 94;
+            // 
             // FrmPrestamos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
@@ -240,6 +252,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.Controls.Add(this.DataListadoPrestamos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtBuscarDocumento);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -268,5 +281,6 @@ namespace CapaPresentacion.FrmSecundarios
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
     }
 }

@@ -57,11 +57,10 @@ namespace CapaPresentacion.FrmSecundarios
 
         private void BtnNewSocio_Click(object sender, EventArgs e)
         {
-            FrmFiltro frmFiltro = new FrmFiltro();
-            frmFiltro.Show();
+            
             AddSocios addSocios = new AddSocios();
             addSocios.ShowDialog();
-            frmFiltro.Close();
+          
             ListarSocios();
 
         }
@@ -85,8 +84,7 @@ namespace CapaPresentacion.FrmSecundarios
         {
             if (DataListadoSocios.SelectedRows.Count > 0)
             {
-                FrmFiltro frmFiltro = new FrmFiltro();
-                frmFiltro.Show();
+               
                 AddSocios addSocios = new AddSocios();
                 addSocios.Update = true;
                 addSocios.TxtId.Text = DataListadoSocios.CurrentRow.Cells["codigo"].Value.ToString();
@@ -96,7 +94,7 @@ namespace CapaPresentacion.FrmSecundarios
                 addSocios.TxtCedula.Text = DataListadoSocios.CurrentRow.Cells["cedula"].Value.ToString();
                 addSocios.CmbEstado.Text = DataListadoSocios.CurrentRow.Cells["estado"].Value.ToString();
                 addSocios.ShowDialog();
-                frmFiltro.Close();
+             
                 ListarSocios();
             }
         }

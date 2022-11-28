@@ -58,11 +58,10 @@ namespace CapaPresentacion.FrmPrincipales
 
         private void BtnSocios_Click(object sender, EventArgs e)
         {
-            FrmFiltro frmFiltro = new FrmFiltro();
-            frmFiltro.Show();
+           
             FrmSocios socios = new FrmSocios();
             socios.ShowDialog();
-            frmFiltro.Close();
+            
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -72,12 +71,10 @@ namespace CapaPresentacion.FrmPrincipales
 
         private void BtnPrestamos_Click(object sender, EventArgs e)
         {
-            FrmFiltro frmFiltro = new FrmFiltro();
-
-            frmFiltro.Show();
+           
             FrmPrestamos socios = new FrmPrestamos();
             socios.ShowDialog();
-            frmFiltro.Close();
+         
         }
 
         private void BtnPagos_Click(object sender, EventArgs e)
@@ -97,11 +94,10 @@ namespace CapaPresentacion.FrmPrincipales
 
         private void BtnAhorros_Click(object sender, EventArgs e)
         {
-            FrmFiltro frmFiltro = new FrmFiltro();
-            frmFiltro.Show();
+            
             FrmAhorros ahorros = new FrmAhorros();
             ahorros.ShowDialog();
-            frmFiltro.Close();
+          
         }
     }
 }

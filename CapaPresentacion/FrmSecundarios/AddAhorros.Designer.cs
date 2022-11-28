@@ -46,6 +46,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.BtnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.LblIdSocio = new System.Windows.Forms.Label();
             this.LblTotal = new System.Windows.Forms.Label();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -254,6 +255,17 @@ namespace CapaPresentacion.FrmSecundarios
             this.LblTotal.TabIndex = 19;
             this.LblTotal.Text = "Ahorros";
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2CustomGradientPanel1.BorderThickness = 3;
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(533, 496);
+            this.guna2CustomGradientPanel1.TabIndex = 97;
+            // 
             // AddAhorros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
@@ -273,6 +285,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -304,5 +317,6 @@ namespace CapaPresentacion.FrmSecundarios
         internal System.Windows.Forms.Label LblIdSocio;
         internal Guna.UI2.WinForms.Guna2ComboBox CmbSocios;
         internal System.Windows.Forms.Label LblTotal;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
     }
 }

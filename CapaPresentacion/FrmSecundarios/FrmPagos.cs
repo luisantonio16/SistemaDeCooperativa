@@ -89,11 +89,11 @@ namespace CapaPresentacion.FrmSecundarios
 
         private void realizarPagoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmFiltro filtro = new FrmFiltro();
+          
 
             if (DataListadoPagos.SelectedRows.Count > 0)
             {
-                filtro.Show();
+              
                 FrmAbonarPago Abonar = new FrmAbonarPago();
                 Abonar.LblNombre.Text = DataListadoPagos.CurrentRow.Cells["NomSocio"].Value.ToString();
                 Abonar.Lblid.Text = DataListadoPagos.CurrentRow.Cells["CodigoPago"].Value.ToString();
@@ -102,17 +102,17 @@ namespace CapaPresentacion.FrmSecundarios
                 Abonar.LblRestas.Text = DataListadoPagos.CurrentRow.Cells["CuotasRestantes"].Value.ToString();
                 //Abonar.LblRestas.Text = DataListadoPagos.CurrentRow.Cells["CuotasRestantes"].Value.ToString();
                 Abonar.ShowDialog();
-                filtro.Hide();
+               
             }
         }
 
         private void detalleDePagosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmFiltro filtro = new FrmFiltro();
+           
 
             if (DataListadoPagos.SelectedRows.Count > 0)
             {
-                filtro.Show();
+               
                 FrmDetallePago frmDetalle = new FrmDetallePago();
                 frmDetalle.Tag = DataListadoPagos.CurrentRow.Cells["CodigoPago"].Value.ToString();
                 frmDetalle.LblNom.Text = DataListadoPagos.CurrentRow.Cells["NomSocio"].Value.ToString();
@@ -120,7 +120,7 @@ namespace CapaPresentacion.FrmSecundarios
 
 
                 frmDetalle.ShowDialog();
-                filtro.Hide();
+                
             }
 
         }

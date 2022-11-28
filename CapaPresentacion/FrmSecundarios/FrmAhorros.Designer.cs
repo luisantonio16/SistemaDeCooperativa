@@ -31,7 +31,7 @@ namespace CapaPresentacion.FrmSecundarios
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAhorros));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
             this.DataListadoAhorros = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,6 +45,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataListadoAhorros)).BeginInit();
             this.SubMenu.SuspendLayout();
@@ -75,14 +76,14 @@ namespace CapaPresentacion.FrmSecundarios
             this.DataListadoAhorros.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.DataListadoAhorros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataListadoAhorros.ColumnHeadersVisible = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataListadoAhorros.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataListadoAhorros.DefaultCellStyle = dataGridViewCellStyle1;
             this.DataListadoAhorros.GridColor = System.Drawing.Color.DimGray;
             this.DataListadoAhorros.Location = new System.Drawing.Point(12, 231);
             this.DataListadoAhorros.Name = "DataListadoAhorros";
@@ -172,7 +173,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.detalleDePagosToolStripMenuItem,
             this.realizarPagoToolStripMenuItem});
             this.SubMenu.Name = "SubMenu";
-            this.SubMenu.Size = new System.Drawing.Size(200, 74);
+            this.SubMenu.Size = new System.Drawing.Size(200, 52);
             // 
             // detalleDePagosToolStripMenuItem
             // 
@@ -223,6 +224,17 @@ namespace CapaPresentacion.FrmSecundarios
             this.label4.TabIndex = 94;
             this.label4.Text = "Total";
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2CustomGradientPanel1.BorderThickness = 5;
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1249, 632);
+            this.guna2CustomGradientPanel1.TabIndex = 95;
+            // 
             // FrmAhorros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
@@ -237,6 +249,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.Controls.Add(this.DataListadoAhorros);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtBuscarDocumento);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -268,5 +281,6 @@ namespace CapaPresentacion.FrmSecundarios
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
     }
 }

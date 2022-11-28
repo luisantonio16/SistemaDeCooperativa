@@ -44,6 +44,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.BtnAceptar = new Guna.UI2.WinForms.Guna2Button();
             this.LblRestas = new System.Windows.Forms.Label();
             this.LblCodPrestamos = new System.Windows.Forms.Label();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -198,6 +199,17 @@ namespace CapaPresentacion.FrmSecundarios
             this.LblCodPrestamos.Text = ".";
             this.LblCodPrestamos.Visible = false;
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2CustomGradientPanel1.BorderThickness = 3;
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(435, 324);
+            this.guna2CustomGradientPanel1.TabIndex = 100;
+            // 
             // FrmAbonarPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -215,6 +227,7 @@ namespace CapaPresentacion.FrmSecundarios
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DimGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -244,5 +257,6 @@ namespace CapaPresentacion.FrmSecundarios
         private Guna.UI2.WinForms.Guna2Button BtnAceptar;
         internal System.Windows.Forms.Label LblRestas;
         internal System.Windows.Forms.Label LblCodPrestamos;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
     }
 }

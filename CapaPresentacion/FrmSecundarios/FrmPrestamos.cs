@@ -57,11 +57,10 @@ namespace CapaPresentacion.FrmSecundarios
 
         private void BtnNewPrestamo_Click(object sender, EventArgs e)
         {
-            FrmFiltro filtro = new FrmFiltro();
-            filtro.Show();
+           
             AddPrestamos prestamos = new AddPrestamos();
             prestamos.ShowDialog();
-            filtro.Close();
+           
             ListarPrestamos();
         }
 
